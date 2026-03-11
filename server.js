@@ -86,6 +86,7 @@ const normalizeFriend = (friend, index) => ({
   name: friend?.name ?? null,
   realname: friend?.realname ?? null,
   country: friend?.country ?? null,
+  playcount: friend?.playcount != null ? Number(friend.playcount) : null,
   image: pickLastFmImage(friend?.image),
   url: friend?.url ?? null,
 });
